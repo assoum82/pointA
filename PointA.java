@@ -1,6 +1,6 @@
 package point;
 
-public class PointA extends Point{
+public class PointA extends Point{ // tu t'es trompé PointNom extends PointA et PonitA extends Point 
     private char name;
     public PointA(int x,int y,char name){
         super(x,y);
@@ -14,7 +14,7 @@ public class PointA extends Point{
         super();
         this.name=name;
     }
-    public void afficheCoord(){
+    public void afficheCoord(){ // donc la il fallait juste redéfinir la méthode afficheCoord()
         System.out.println(name+"("+getX()+","+getY()+")");
     }
     
